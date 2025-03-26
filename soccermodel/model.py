@@ -80,9 +80,11 @@ for row_index in range(17):
 
 #print(betandwageandgoal)
 sortedBet = sorted(betandwageandgoal.items(), key=lambda x:x[1], reverse=True)
-print(dict(sortedBet))
+#print(dict(sortedBet))
 
-
+# Prints the formatted output
+for rank, (team, score) in enumerate(sortedBet, start=1):
+    print(f"{rank}. {team}: {score}")
 
 
 
